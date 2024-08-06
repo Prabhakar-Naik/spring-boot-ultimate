@@ -72,6 +72,23 @@ public class AuthorDAOImplTest {
     }
 
 
+    @Test
+    public void testThatDeleteGeneratesCorrectSql(){
+        underTest.deleteOne(1L);
+
+        verify(jdbcTemplate).update(
+                "DELETE FROM authors where id = ?",
+                1L
+        );
+    }
+
+
+    @Test
+    public void testThatDeleteAllGeneratesCorrectSql(){
+        underTest.delete();
+        verify(jdbcTemplate).update("DELETE FROM authors");
+    }
+
 
 
 }

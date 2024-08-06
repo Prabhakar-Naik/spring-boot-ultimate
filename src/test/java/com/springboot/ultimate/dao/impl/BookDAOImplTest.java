@@ -1,6 +1,7 @@
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.TestDataUtil;
+import com.springboot.ultimate.domain.Author;
 import com.springboot.ultimate.domain.Book;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -84,6 +85,37 @@ public class BookDAOImplTest {
                 ArgumentMatchers.<BookDAOImpl.BookRowMapper>any()
         );
     }
+
+
+    @Test
+    public void testThatUpdateGeneratesCorrectSql() {
+
+        Book book = TestDataUtil.creatTestBookA();
+        underTest.update(book.getIsbn(), book);
+
+        verify(jdbcTemplate).update(
+                "UPDATE books SET isbn = ?, title = ?, author_id = ? WHERE isbn = ?",
+                "98-765-4323", "This shadow in the Attic", 1L, "98-765-4323"
+        );
+    }
+
+    @Test
+    public void testThatDeleteGeneratesCorrectSql(){
+        underTest.deleteOne("98-765-4323");
+
+        verify(jdbcTemplate).update(
+                "DELETE FROM books WHERE isbn = ?",
+                "98-765-4323"
+        );
+    }
+
+    @Test
+    public void testThatDeleteAllGeneratesCorrectSql(){
+        underTest.delete();
+        verify(jdbcTemplate).update("DELETE FROM books");
+    }
+
+
 
 
 }

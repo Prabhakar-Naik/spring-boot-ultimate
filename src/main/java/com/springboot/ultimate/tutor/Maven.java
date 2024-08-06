@@ -223,7 +223,12 @@ public class Maven {
                     ==> to build or implement integration testing, as well low level functionality.
                     ==> go through implementation logic in implTest as well integration test
                         you can find find() method for retrieve the records from db.
-                XXVII. Update Integration test between the functionality
+                XXVII. Update Integration test functionality
+                    ==> to build the functionality on update a record and integrating testing
+                    ==> go through implementation in book and author test and integrated test
+                        functions on update.
+                    ==> find the update methods and analyse it well.
+                XXVIII. Delete Integration test implementations
                     ==> 
                     
                 """;

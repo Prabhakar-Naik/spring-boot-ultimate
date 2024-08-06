@@ -1,0 +1,4 @@
+-- insert into widgets (id, name, purpose)
+-- values (5,'prabha','test'),
+--        (6,'tedrfr','gergrg'),
+--        (7,'tgdgd','fgdgb');

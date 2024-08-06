@@ -1,3 +1,4 @@
+/*
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.dao.BookDAO;
@@ -12,9 +13,12 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
+*/
 /**
  * @author prabhakar, @Date 29-07-2024
- */
+ *//*
+
+//Jdbc api
 @Service
 public class BookDAOImpl implements BookDAO {
 
@@ -94,3 +98,4 @@ public class BookDAOImpl implements BookDAO {
     }
 
 }
+*/

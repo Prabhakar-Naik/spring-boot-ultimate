@@ -1,3 +1,4 @@
+/*
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.dao.AuthorDAO;
@@ -11,9 +12,12 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
+*/
 /**
  * @author prabhakar, @Date 29-07-2024
- */
+ *//*
+
+//Jdbc api
 @Service
 public class AuthorDAOImpl implements AuthorDAO {
     private final JdbcTemplate jdbcTemplate;
@@ -79,3 +83,4 @@ public class AuthorDAOImpl implements AuthorDAO {
         }
     }
 }
+*/

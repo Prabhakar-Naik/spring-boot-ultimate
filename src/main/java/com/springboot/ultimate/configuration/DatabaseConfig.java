@@ -1,3 +1,4 @@
+/*
 package com.springboot.ultimate.configuration;
 
 import org.springframework.context.annotation.Bean;
@@ -6,9 +7,12 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
+*/
 /**
  * @author prabhakar, @Date 29-07-2024
- */
+ *//*
+
+//Jdbc api
 @Configuration
 public class DatabaseConfig {
 
@@ -17,3 +21,4 @@ public class DatabaseConfig {
         return new JdbcTemplate(dataSource);
     }
 }
+*/

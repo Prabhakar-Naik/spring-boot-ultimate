@@ -1,7 +1,8 @@
-/*
-package com.springboot.ultimate.dao.impl;
+package com.springboot.ultimate.repositories;
 
 import com.springboot.ultimate.TestDataUtil;
+import com.springboot.ultimate.dao.impl.AuthorDAOImpl;
+import com.springboot.ultimate.dao.impl.BookDAOImpl;
 import com.springboot.ultimate.domain.Author;
 import com.springboot.ultimate.domain.Book;
 import org.junit.jupiter.api.Test;
@@ -16,11 +17,9 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-*/
 /**
  * @author prabhakar, @Date 30-07-2024
- *//*
-
+ */
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
@@ -125,4 +124,3 @@ public class BookDAOImplIntegrationTest {
 
 
 }
-*/

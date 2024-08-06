@@ -1,3 +1,4 @@
+/*
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.TestDataUtil;
@@ -13,9 +14,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 
+*/
 /**
  * @author prabhakar, @Date 29-07-2024
- */
+ *//*
+
+//Jdbc api
+
 @ExtendWith(MockitoExtension.class)
 public class AuthorDAOImplTest {
 
@@ -92,3 +97,4 @@ public class AuthorDAOImplTest {
 
 
 }
+*/

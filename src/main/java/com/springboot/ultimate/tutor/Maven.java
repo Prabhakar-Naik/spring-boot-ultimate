@@ -229,7 +229,19 @@ public class Maven {
                         functions on update.
                     ==> find the update methods and analyse it well.
                 XXVIII. Delete Integration test implementations
-                    ==> 
+                    ==> to build the functionality about delete integration test.
+                    ==> go through implementation in book and authors functionality.
+                    ==> delete and deleteOne both function performing same but 
+                        procedural query is differ.
+                XXIX. Spring Data JPA Setup
+                    ==> to implement data jpa in this project it self i made some changes
+                    ==> 1. i commented all the code which is developed by me. at the to you can
+                        find Jdbc api
+                        example: test dir dao.impl completely commented as well i want to reuse the
+                        integration part so i copied and created new dir repositories in test dir
+                    ==> 2. i completely commented dao and it's implementation in java directory.
+                    ==> As well database configuration in configuration directory.
+                    
                     
                 """;
     }

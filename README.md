@@ -14,7 +14,7 @@ Here we are proving you a virtual database Ahhh. nothing but we are using h2 tem
 PostgreSQL database.
 
 # Prerequisite for this application
-first install DockerDesktop.<br/>
+first install <a href="https://docs.docker.com/desktop/install/windows-install/">DockerDesktop</a>.<br/>
 second install pgAdmin nothing but <a href="https://www.postgresql.org/">PostgreSQL</a>.<br/>
 third step is to clean and install maven and build it in your IDE.<br/>
 

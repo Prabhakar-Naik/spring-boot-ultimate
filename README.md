@@ -21,10 +21,10 @@ third step is to clean and install maven and build it in your IDE.<br/>
 <hr/>
 # Here your task is completed now Application Task will start.
 
-go to your project integrated terminal then run the below commnad
-==> docker compose up
-you can see like this
-<img src="" alt="error"/>
+go to your project integrated terminal then run the below commnad.<br/>
+==> docker compose up<br/>
+you can see like this<br/>
+<img src="spring-ultimate/Screenshot 2024-08-09 112118.png" alt="error"/>
 
 <hr/>
 then check your docker desktop

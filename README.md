@@ -29,7 +29,7 @@ you can see like this<br/>
 <hr/>
 then check your docker desktop
 you can observe this
-<img src="" alt="error"/>
+<img src="spring-ultimate/Screenshot 2024-08-09 112142.png" alt="error"/>
 
 <hr/>
 finally you can connect with basic properties in postgreSQL connect with new server registration.

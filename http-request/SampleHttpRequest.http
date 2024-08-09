@@ -1,0 +1,17 @@
+###
+GET http://localhost:8085/books/getBook
+
+###
+POST http://localhost:8085/books/createBook
+Content-Type: application/json
+
+{
+  "isbn": "890-576-274",
+  "title": "How is Life",
+  "authorId": {
+    "id": 1,
+    "name": "prashanth",
+    "age": 45
+  }
+}
+

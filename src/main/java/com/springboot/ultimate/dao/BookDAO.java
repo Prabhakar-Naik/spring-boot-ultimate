@@ -1,7 +1,7 @@
 /*
 package com.springboot.ultimate.dao;
 
-import com.springboot.ultimate.domain.Book;
+import com.springboot.ultimate.domain.entities.Book;
 
 import java.util.List;
 import java.util.Optional;

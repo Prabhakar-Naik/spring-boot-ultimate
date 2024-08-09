@@ -2,7 +2,7 @@
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.TestDataUtil;
-import com.springboot.ultimate.domain.Author;
+import com.springboot.ultimate.domain.entities.Author;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

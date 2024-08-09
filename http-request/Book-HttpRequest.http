@@ -1,0 +1,56 @@
+###
+POST http://localhost:8085/books/createBook
+Content-Type: application/json
+
+{
+  "isbn": "123-456-789-574",
+  "title": "This is My Life",
+  "authorId": null
+}
+
+
+###
+PUT http://localhost:8085/books/updateBook/123-456-789
+Content-Type: application/json
+
+{
+  "title": "This is our Life. change it",
+  "authorId": {
+    "name": "prabhakar",
+    "age": 24
+  }
+}
+
+###
+POST http://localhost:8085/books/createUpdateBook/123-456-789-574
+Content-Type: application/json
+
+{
+  "title": "This is our Life.",
+  "authorId": {
+    "name": "charan",
+    "age": 34
+  }
+}
+
+###
+GET http://localhost:8085/books/getListOfBooks
+
+
+###
+GET http://localhost:8085/books/findALlPagination?size=10&page=0
+
+###
+GET http://localhost:8085/books/getOneBook/123-456-789
+
+###
+PATCH http://localhost:8085/books/partialUpdate/123-456-789
+Content-Type: application/json
+
+{
+  "title": "This is our Life. change it"
+}
+
+
+###
+DELETE http://localhost:8085/books/deleteBook/123-456-789-574

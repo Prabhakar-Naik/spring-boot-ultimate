@@ -2,8 +2,8 @@
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.dao.BookDAO;
-import com.springboot.ultimate.domain.Author;
-import com.springboot.ultimate.domain.Book;
+import com.springboot.ultimate.domain.entities.Author;
+import com.springboot.ultimate.domain.entities.Book;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;

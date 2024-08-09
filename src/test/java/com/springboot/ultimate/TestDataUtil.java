@@ -1,7 +1,9 @@
 package com.springboot.ultimate;
 
-import com.springboot.ultimate.domain.Author;
-import com.springboot.ultimate.domain.Book;
+import com.springboot.ultimate.domain.dto.AuthorDto;
+import com.springboot.ultimate.domain.dto.BookDto;
+import com.springboot.ultimate.domain.entities.Author;
+import com.springboot.ultimate.domain.entities.Book;
 
 /**
  * @author prabhakar, @Date 30-07-2024
@@ -14,6 +16,14 @@ public final class TestDataUtil {
 
     public static Author createTestAuthorA() {
         return Author.builder()
+                .id(1L)
+                .name("prabhakar")
+                .age(24)
+                .build();
+    }
+
+    public static AuthorDto createTestAuthorDtoA() {
+        return AuthorDto.builder()
                 .id(1L)
                 .name("prabhakar")
                 .age(24)
@@ -41,35 +51,46 @@ public final class TestDataUtil {
                 .build();
     }
 
-    public static Book creatTestBookA() {
+    // here i modified parameter as final Author author
+    // as well .authorId(author) this one for data jpa dependency requirement.
+
+    public static Book creatTestBookA(final Author author) {
         return Book.builder()
-                .isbn("98-765-4323")
-                .title("This shadow in the Attic")
-                .authorId(1L)
+                .isbn("98-765-43237")
+                .title("This shadow")
+                .authorId(author)
                 .build();
     }
 
-    public static Book creatTestBookB() {
+    public static BookDto creatTestBookDtoA(final AuthorDto author) {
+        return BookDto.builder()
+                .isbn("98-765-4323")
+                .title("This shadow in the Attic")
+                .authorId(author)
+                .build();
+    }
+
+    public static Book creatTestBookB(final Author author) {
         return Book.builder()
                 .isbn("98-765-433")
                 .title("This shadow in the Attic")
-                .authorId(1L)
+                .authorId(author)
                 .build();
     }
 
-    public static Book creatTestBookC() {
+    public static Book creatTestBookC(final Author author) {
         return Book.builder()
                 .isbn("98-765-434")
                 .title("This shadow")
-                .authorId(1L)
+                .authorId(author)
                 .build();
     }
 
-    public static Book creatTestBookD() {
+    public static Book creatTestBookD(final Author author) {
         return Book.builder()
                 .isbn("98-765-435")
                 .title("This shadow")
-                .authorId(1L)
+                .authorId(author)
                 .build();
     }
 }

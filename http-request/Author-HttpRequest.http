@@ -1,0 +1,39 @@
+###
+POST http://localhost:8085/authors/createAuthor
+Content-Type: application/json
+
+{
+  "name": "charan",
+  "age": 34
+}
+
+###
+GET http://localhost:8085/authors/getListOfAuthors
+
+
+###
+GET http://localhost:8085/authors/getOneAuthor/1
+
+
+###
+PUT http://localhost:8085/authors/updateAuthor/1
+Content-Type: application/json
+
+{
+  "id": 99,
+  "name": "prabhakar naik",
+  "age": 45
+}
+
+###
+PATCH http://localhost:8085/authors/partialUpdate/1
+Content-Type: application/json
+
+{
+  "name": "prabhakar"
+}
+
+
+
+###
+DELETE http://localhost:8085/authors/deleteAuthor/2

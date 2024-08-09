@@ -241,8 +241,125 @@ public class Maven {
                         integration part so i copied and created new dir repositories in test dir
                     ==> 2. i completely commented dao and it's implementation in java directory.
                     ==> As well database configuration in configuration directory.
-                    
-                    
+                    ==> Implementing Data JPA 
+                        -> create entity for data in storage of tables using sql
+                        -> create relations between entities as well data jpa setup using repositories.
+                        -> to present the pojo model using annotations like
+                        @Entity, @Table, @Id, @GeneratedValue, @ManyToOne, @JoinColumn ect.
+                        -> Then finish all required
+                XXX. Hibernate Auto DDL
+                    ==>  go through application.properties file to create tables in database
+                    ==> hibernate take care of ddl sql schema
+                I. Complete CRUD Application implementation
+                    ==> you can simply refer repository in test directory
+                    ==> you can find the create and read ones.
+                    ==> before that you must delete your .sql extension schemas
+                    ==> data jpa automatically find the schema. if anything wrong with that
+                        it will not pass the testcases.
+                    ==> Create, ReadOne, ReadMany, Update, Delete and DeleteMany 
+                    ==> These functionality developed in the case of test scenarios not in low
+                    level schema queries.
+                    ==> All the possible queries and implementation of schema is take care of
+                        Data JPA dependency.
+                    ==> we must get basic component knowledge on Data JPA dependency and
+                        usage of annotation which is mentioned above as well attributes they have.
+                II. Custom Query
+                    ==> you can find testThatGetAuthorsWithAgeLessThan in repository directory
+                    ==> data jpa very clever to find out the name base queries
+                    ==> you can try to fail the cases if you want to be fail.
+                III. HQL 
+                    ==> we are created multiple scenario queries if the jpa also find the failure case
+                        then you can create your custom schema in @Query annotation.
+                IV. What is Jackson and Spring Web
+                    ==>  using spring web dependency internally contain java jackson dependency.
+                    ==> java object to json with help of Mappings
+                V. Java objects to json
+                    ==> Here to get the implementation jackson object go with jacksonTest class
+                        in test directory.
+                    ==> you can find the implementation.
+                VI. Rename JSON properties
+                    ==> you can directly modify that attribute in model class like
+                    ==> @JsonPropertyOrder({ "isbn", "title1", "authorId" })
+                    ==> as well must mention @JsonProperty("title1") at title.
+                VII. Rest Api Design
+                    ==> Rest Api build on the concept called Resources
+                    ==> The url structure resources    
+                    ==> the @RequestMapping concept is belongs to resources
+                        which is we connect first with prefix of the resources
+                        In the case of module
+                VIII. Basic Rest APIs on Book
+                    ==> we can create and retrieve the data in json and jackson
+                    using java web dependency as well we can manage manually.
+                    ==> we can use in different scenarios like relations between tables
+                        and json property, ignore, order of properties ect.
+                IX. Create Authors Rest APIs In AuthorController
+                    ==> Create author rest api
+                    ==> 1. Create controller and to define basic method in controller, service and 
+                        author service implementation.
+                        2. Create mapper generic and to add dependency for mapping dto to entity
+                        and entity to dto.
+                        3. Implement the mapper functionality. before that you must configure
+                        the ModelMapper
+                        4. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                X. Create Book Rest APIs In BookController
+                    ==> Create Book rest api
+                    ==> 1. Create Controller and to define basic function in controller, service and
+                        book service implementation.
+                        2. Already Generic Mapper Created re use it but implement the book mapper.
+                        entity to dto and dto to entity.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XI. Author List Rest APIs In AuthorController
+                    ==> Create rest api for List of Author records
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XII. Book List Rest APIs In BookController
+                    ==> Create rest api for List of Book records
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XIII. Author Find One Rest API In AuthorController
+                    ==> Create rest api for find one Author.
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XIV. Book Find One Rest API In BookController
+                    ==> Create rest api for find one Book.
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XV. Author Full Update Rest API In AuthorController
+                    ==> Create rest api for update Author Record.
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XVI. Book Full Update Rest API In BookController
+                    ==> Create rest api for update Book Record.
+                    ==> 1. Define function in controller, service and author service implementation.
+                        2. Already Generic Mapper Created re use it but implement the author mapper
+                        using streams as well don't need streams also.
+                        3. After that implement integration test on the specified function
+                        mentioned in base of url path.
+                XVII. Author Partial Update Rest API In AuthorController
+                    ==> As it ease like update
+                    ==> go through functionality and understand it.
+                XVIII. Book Partial Update Rest API In AuthorController
+                    ==> As it ease like update
+                    ==> go through functionality and understand it.
+                XIX. Nested Objects
+                    ==> 
                 """;
     }
 

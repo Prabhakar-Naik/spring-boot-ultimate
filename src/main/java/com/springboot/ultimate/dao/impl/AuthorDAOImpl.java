@@ -2,7 +2,7 @@
 package com.springboot.ultimate.dao.impl;
 
 import com.springboot.ultimate.dao.AuthorDAO;
-import com.springboot.ultimate.domain.Author;
+import com.springboot.ultimate.domain.entities.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;

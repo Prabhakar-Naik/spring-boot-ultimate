@@ -1,7 +1,7 @@
 /*
 package com.springboot.ultimate.dao;
 
-import com.springboot.ultimate.domain.Author;
+import com.springboot.ultimate.domain.entities.Author;
 
 import java.util.List;
 import java.util.Optional;

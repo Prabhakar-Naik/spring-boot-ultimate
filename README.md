@@ -15,7 +15,7 @@ PostgreSQL database.
 
 # Prerequisite for this application
 first install DockerDesktop.<br/>
-second install pgAdmin nothing but PostgreSQL.<br/>
+second install pgAdmin nothing but <a href="https://www.postgresql.org/">PostgreSQL</a>.<br/>
 third step is to clean and install maven and build it in your IDE.<br/>
 
 <hr/>

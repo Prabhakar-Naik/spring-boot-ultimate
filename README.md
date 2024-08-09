@@ -33,11 +33,11 @@ you can observe this
 
 <hr/>
 finally you can connect with basic properties in postgreSQL connect with new server registration.
-<img src="" alt="error"/>
+<img src="spring-ultimate/Screenshot 2024-08-09 112413.png" alt="error"/>
 
 # Boom your Application Running Successfully.
 
 you can explorw all the files in this project.
 to get the more accurate and qualitative information to become a java Backend Developer.
 Thank you.
-@Prabhakar-Naik
+Prabhakar-Naik
